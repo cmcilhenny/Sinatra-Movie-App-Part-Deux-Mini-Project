@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h2>Movie Info</h2>
+	<ul>
+		<li> <%= @result["Title"] %> </li>
+		<li>#{result["Plot"]}</li>
+		<li>#{result["Year"]}</li>
+		<li>#{result["Rated"]}</li>
+		<li>#{result["Runtime"]}</li>
+		<li>#{result["Genre"]}</li>
+		<li>#{result["Director"]}</li>
+		<li>#{result["Actors"]}</li>
+		<li><a href='http://www.imdb.com/title/#{result["imdbID"]}'>IMDB Info</a></li>
+	</ul>
+	<img src = #{result['Poster']}></img>
+
+</body>
+</html>
+

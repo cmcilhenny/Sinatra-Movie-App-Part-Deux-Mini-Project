@@ -1,0 +1,11 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Movie List</h1>
+	<% for @movie in @result["Search"] %>
+	<br><a href=/poster/<%= @movie["imdbID"]%>> <%=@movie["Title"]%> - <%=@movie["Year"]%></a><br>
+	<% end %>
+</body>
+</html>
