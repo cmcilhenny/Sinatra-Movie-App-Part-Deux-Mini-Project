@@ -35,5 +35,9 @@ get '/poster/:imdb_id' do
   erb :show
 end
 
+get '/error' do
+
+	erb :error
+end
 
 

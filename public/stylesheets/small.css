@@ -1,0 +1,12 @@
+html {
+	background-image: url(../images/small_movie_search_index_2.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+body {
+	font: 18px/1.5em "helvetica neue", sans-serif;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+

@@ -1,22 +1,24 @@
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-	<h2>Movie Info</h2>
-	<ul>
-		<li> <%= @result["Title"] %> </li>
-		<li> <%= @result["Plot"] %> </li>
-		<li> <%= @result["Year"] %></li>
-		<li> <%= @result["Rated"] %></li>
-		<li> <%= @result["Runtime"] %></li>
-		<li> <%= @result["Genre"] %></li>
-		<li> <%= @result["Director"] %></li>
-		<li> <%= @result["Actors"] %></li>
-		<li><a href='http://www.imdb.com/title/<%=@result["imdbID"]%>'>IMDB Info</a></li>
-	</ul>
-	<img src = "<%=@result['Poster']%>"></img>
-
-</body>
-</html>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-4 col-md-4 col-xs-offset-4 col-md-offset-4 title">
+			<h2><%= @result["Title"] %>, <%= @result["Year"] %></h2>
+		</div>
+		<div class="row">
+			<div class="col-xs-4 col-xs-offset-2 col-md-4 col-md-offset-2">
+				<img src = "<%=@result['Poster']%>"></img>
+			</div>
+			<div class="col-xs-4 col-md-4">
+				<ul>
+					<li> <%= @result["Plot"] %> </li>
+					<li> <br></br>directed by <br><%= @result["Director"] %></br></li>
+					<li> featuring <br><%= @result["Actors"] %></br></li>
+					<li> genre: <%= @result["Genre"] %></li>
+					<li> rating: <%= @result["Rated"] %></li>
+					<li> runtime: <%= @result["Runtime"] %></li>
+					<li><a href='http://www.imdb.com/title/<%=@result["imdbID"]%>'>IMDB Info</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
 
