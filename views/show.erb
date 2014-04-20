@@ -1,7 +1,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-xs-4 col-md-4 col-xs-offset-4 col-md-offset-4 title">
-			<h2><%= @result["Title"] %>, <%= @result["Year"] %></h2>
+			<h2><%= @result["Title"] %> <%= @result["Year"] %></h2>
 		</div>
 		<div class="row">
 			<div class="col-xs-4 col-xs-offset-2 col-md-4 col-md-offset-2">
@@ -10,11 +10,11 @@
 			<div class="col-xs-4 col-md-4">
 				<ul>
 					<li> <%= @result["Plot"] %> </li>
-					<li> <br></br>directed by <br><%= @result["Director"] %></br></li>
-					<li> featuring <br><%= @result["Actors"] %></br></li>
-					<li> genre: <%= @result["Genre"] %></li>
-					<li> rating: <%= @result["Rated"] %></li>
-					<li> runtime: <%= @result["Runtime"] %></li>
+					<li> <br></br><strong>directed by </strong><br><%= @result["Director"] %></br></li>
+					<li><strong>featuring </strong><br><%= @result["Actors"] %></br></li>
+					<li><strong> genre: </strong><%= @result["Genre"] %></li>
+					<li><strong> rating: </strong><%= @result["Rated"] %></li>
+					<li><strong> runtime: </strong><%= @result["Runtime"] %></li>
 					<li><a href='http://www.imdb.com/title/<%=@result["imdbID"]%>'>IMDB Info</a></li>
 				</ul>
 			</div>
