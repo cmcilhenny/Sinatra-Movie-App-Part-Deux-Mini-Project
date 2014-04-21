@@ -17,9 +17,11 @@ end
 
 get '/results' do
 
-	if params[:movie] == ""
+	if params[:movie] == "" || params[:movie] == nil
 		redirect '/error'
 	end
+
+
 
 	response = Typhoeus.get("http://www.omdbapi.com/", :params => {:s => "#{params[:movie]}"})
 	@result = JSON.parse(response.body)
